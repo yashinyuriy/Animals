@@ -10,4 +10,12 @@ public class MyAnimalList {
             nextIndex++;
         }
     }
+
+    public boolean remove (int index){
+        if(index<0 || index>=animals.length) return false;
+        else{
+            animals[index] = null;
+            return true;
+        }
+    }
 }
